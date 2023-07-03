@@ -4,6 +4,8 @@
 * @version 1
 */
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         SmartTv tv = new SmartTv();
@@ -14,7 +16,6 @@ public class App {
         System.out.println("canal atual: "+ tv.canal);
 
         tv.desligar();
-
 
     }
 }
