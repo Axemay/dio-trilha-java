@@ -29,9 +29,14 @@ public class ProcessoSeletivo {
            if(continuarTentando){
                tentativas++;
            } else{
-               System.out.println("Contato realizado com sucesso com "+ candidato);
+               System.out.println("CONTATO REALIZADO COM SUCESSO!");
            }
         } while(continuarTentando && tentativas < 3);
+        if(atendeu){
+            System.out.println("Conseguimos contato com " + candidato + " na " + tentativas + " tentativa");
+        }else {
+            System.out.println("Não conseguimos contato com " + candidato);
+        }
     }
     static boolean atender(){
         return new Random().nextInt(3)==1;
