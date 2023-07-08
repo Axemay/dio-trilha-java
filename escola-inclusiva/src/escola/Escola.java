@@ -26,6 +26,6 @@ public class Escola {
 
         System.out.println(Aluno.verificaGenero(felipe) + felipe.getNome() + " tem " + felipe.getIdade() + " anos ");
         System.out.println(Aluno.verificaGenero(maria) + maria.getNome() + " tem " + maria.getIdade() + " anos ");
-        System.out.println(Aluno.verificaGenero(taylor) + taylor.getNome() + " tem " + maria.getIdade() + " anos ");
+        System.out.println(Aluno.verificaGenero(taylor) + taylor.getNome() + " tem " + taylor.getIdade() + " anos ");
     }
 }
