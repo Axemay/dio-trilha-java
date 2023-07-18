@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco/ContaBanco.iml" filepath="$PROJECT_DIR$/ContaBanco/ContaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Controle-cadidatos/Controle-cadidatos.iml" filepath="$PROJECT_DIR$/Controle-cadidatos/Controle-cadidatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" filepath="$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartTv/SmartTv.iml" filepath="$PROJECT_DIR$/SmartTv/SmartTv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dio-trilha-java.iml" filepath="$PROJECT_DIR$/.idea/dio-trilha-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/escola-inclusiva/escola-inclusiva.iml" filepath="$PROJECT_DIR$/escola-inclusiva/escola-inclusiva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estados-brasileiros/estados-brasileiros.iml" filepath="$PROJECT_DIR$/estados-brasileiros/estados-brasileiros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exemplo-pacotes/exemplo-pacotes.iml" filepath="$PROJECT_DIR$/exemplo-pacotes/exemplo-pacotes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loja-livros/loja-livros.iml" filepath="$PROJECT_DIR$/loja-livros/loja-livros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msn-messager/msn-messager.iml" filepath="$PROJECT_DIR$/msn-messager/msn-messager.iml" />
+    </modules>
+  </component>
+</project>
