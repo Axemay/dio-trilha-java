@@ -9,14 +9,14 @@ public class Conta implements IConta {
 
     private static int SEQUENCIAL = 1;
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
+//    public void setCliente(Cliente cliente) {
+//        this.cliente = cliente;
+//    }
 
-    public Conta(){
+    public Conta(Cliente cliente){
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numeroConta = SEQUENCIAL++;
-
+        this.cliente = cliente;
     }
 
 
@@ -73,5 +73,15 @@ public class Conta implements IConta {
     @Override
     public void consultarSaldo() {
         System.out.println("Saldo atual: "+getSaldo());
+    }
+
+
+    public void exibirCadastroConta(){
+        System.out.println("============= DADOS DA CONTA =============");
+        System.out.println("Agência: "+ this.getAgencia());
+        System.out.println("Número: "+ this.getNumeroConta());
+        System.out.println("Tipo de conta: "+ this.getTipoConta().getTipo());
+        System.out.println("Saldo atual: "+ this.getSaldo());
+        this.cliente.exibirCadastroCliente();
     }
 }

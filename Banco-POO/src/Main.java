@@ -1,30 +1,40 @@
 public class Main {
 
     public static void main(String[] args) {
+
+        Banco banco = new Banco();
+        banco.setNome("ItauderBras");
+
+        //Primeiro cliente
         Cliente cliente1 = new Cliente("John Doe", "45612374831");
-        Cliente cliente2 = new Cliente("Kara Dane", "458754234831");
-        Cliente cliente3 = new Cliente("Maria Silva", "458871235831");
-        Conta conta = new Conta();
-        System.out.println(conta.getAgencia());
-        System.out.println(conta.getNumeroConta());
+        Endereco enderecoCliente1 = new Endereco();
+        enderecoCliente1.setLogradouro("Av. João Góes");
+        enderecoCliente1.setBairro("Ponte aberta");
+        enderecoCliente1.setCidade("Rio Azul");
+        enderecoCliente1.setEstado(Estado.RJ);
+        enderecoCliente1.setNumero(55);
+        enderecoCliente1.setComplemento("Apartamento 105");
+        cliente1.setEndereco(enderecoCliente1);
 
-        conta.depositar(2000);
-
-
-        Conta conta2 = new ContaCorrente();
-        conta2.setCliente(cliente2);
-
-        System.out.println(conta2.getNumeroConta());
-
-        ContaCorrente conta3 = new ContaCorrente();
-        conta3.setCliente(cliente3);
-        System.out.println(conta3.getNumeroConta());
+        //Primeiro conta corrente
+        ContaCorrente contaCorrente = new ContaCorrente(cliente1);
+        contaCorrente.depositar(2000);
 
 
-        Conta contaPp = new ContaPoupanca();
-        contaPp.setCliente(cliente1);
+        //Primeiro conta poupança vinculada a conta corrente
+        ContaPoupanca contaPp = new ContaPoupanca(cliente1);
+        contaPp.setContaCorrenteVinculada(contaCorrente);
         contaPp.consultarSaldo();
-        conta.transferir(200, contaPp);
+        contaCorrente.transferir(200, contaPp);
         contaPp.consultarSaldo();
+
+        //Adicionando contas ao banco
+        banco.adicionarConta(contaCorrente);
+        banco.adicionarConta(contaPp);
+        banco.listarContas();
+
+        //Imprimindo cadastros
+        contaCorrente.exibirCadastroConta();
+        contaPp.exibirCadastroConta();
     }
 }
